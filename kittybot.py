@@ -4,9 +4,13 @@ import logging
 import os
 
 import requests
+from dotenv import load_dotenv
 from telegram import ReplyKeyboardMarkup
 from telegram.ext import CommandHandler, Updater
 
+load_dotenv()
+
+TOKEN = os.getenv('TOKEN')
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',

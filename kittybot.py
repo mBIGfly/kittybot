@@ -10,7 +10,7 @@ from telegram.ext import CommandHandler, Updater
 
 load_dotenv()
 
-TOKEN = os.environ['TOKEN'])
+TOKEN = os.environ('TOKEN')
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
